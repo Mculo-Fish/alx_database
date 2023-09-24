@@ -1,7 +1,6 @@
--- 9-cities_by_state_join.sql
+-- using join
 
--- List cities with corresponding state names using a JOIN
-SELECT cities.id, cities.name, states.name
-FROM cities
+SELECT cities.id, cities.name, states.name 
+FROM cities 
 JOIN states ON cities.state_id = states.id
-ORDER BY cities.id ASC;
+ORDER BY cities.id;
